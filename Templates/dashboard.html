@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - CredMais</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <header>
+
+            <img class="logo" src="{{ url_for('logo') }}" alt="Logo CredMais">
+
+        <nav>
+            <a href="#">Dashboard</a>
+            <a href="#">Perfil</a>
+            <a href="#">Simulação</a>
+            <a href="#">Empréstimos</a>
+            <a href="#">Movimentações</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <div class="inicio">
+
+            <div>
+                <h1>Bem-Vindo, Usuário!</h1>
+                <p>Acompanhe sua saúde financeira e seus empréstimos:</p>
+            </div>
+
+            <div class="data">
+                <p>Hoje, 02 de outubro de 2026</p>
+            </div>
+
+        </div>
+
+
+        <div class="cards">
+
+            <!-- RENDA -->
+            <div class="card">
+
+                <div class="icone">
+                    <img src="/dinheiro" alt="Ícone de dinheiro">
+                </div>
+
+                <div>
+                    <h3>Renda Mensal Líquida</h3>
+                    <h2>R$6.000,00</h2>
+                    <p>Receita de R$ 11.621,00</p>
+                </div>
+
+            </div>
+
+
+            <!-- COMPROMETIMENTO -->
+            <div class="card">
+
+                <div class="icone">
+                    <img src="/check" alt="Ícone de comprometimento">
+                </div>
+
+                <div>
+                    <h3>Comprometimento Anual</h3>
+                    <h2>15,67%</h2>
+                    <p>Risco baixo</p>
+                </div>
+
+            </div>
+
+
+            <!-- PARCELAS -->
+            <div class="card">
+
+                <div class="icone">
+                    <img src="/quadrado" alt="Ícone de parcelas">
+                </div>
+
+                <div>
+                    <h3>Parcelas Futuras</h3>
+                    <h2>R$ 2.824,35</h2>
+                    <p>Nos próximos 3 meses</p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="acoes">
+
+            <div class="coluna-esquerda">
+
+                <!-- SIMULAÇÃO -->
+                <div class="card-acao">
+
+                    <div class="icone">
+                        <img src="/calculadora" alt="Ícone de calculadora">
+                    </div>
+
+                    <div class="conteudo-acao">
+
+                        <h2>Simule um novo crédito</h2>
+
+                        <p>
+                            Veja a parcela, o comprometimento da renda
+                            e o risco antes de contratar.
+                        </p>
+
+                        <button>Simular</button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SITUAÇÃO FINANCEIRA -->
+                <div class="card-acao">
+
+                    <div class="icone">
+                        <img src="/escudo" alt="Ícone de escudo">
+                    </div>
+
+                    <div class="conteudo-acao">
+
+                        <h2>Situação financeira</h2>
+
+                        <p>
+                            Visão geral da sua situação financeira pessoal
+                        </p>
+
+                        <button>Navegar</button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="coluna-direita">
+
+                <!-- PRÓXIMA PARCELA -->
+                <div class="card-parcela">
+
+                    <div class="icone">
+                        <img src="/predio" alt="Ícone de próxima parcela">
+                    </div>
+
+                    <div>
+                        <h3>Próxima Parcela</h3>
+                        <h2>R$ 941,45</h2>
+                        <p>Novembro</p>
+                    </div>
+
+                </div>
+
+
+                <!-- SAIR -->
+                <div class="card-sair">
+
+                    <div>
+
+                        <div class="icone">
+                            <img src="/sair" alt="Ícone de sair">
+                        </div>
+
+                        <p>Sair da Conta</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>
